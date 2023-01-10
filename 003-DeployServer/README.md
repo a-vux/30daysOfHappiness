@@ -6,7 +6,7 @@
     <img style="width: 40%" src="./src/os.png">
 </p>
 
-## *Tại sao lại cần hệ điều hành?*
+<!-- ## *Tại sao lại cần hệ điều hành?* -->
 
 ## *Chức năng của hệ điều hành:*
 ### ***1. Cung cấp giao diện người dùng:***
@@ -72,7 +72,7 @@
 - Hypervisor, còn được gọi là Virtual Machine Monitor (VMM), dịch là ***"Phần mềm giám sát máy ảo"***
 - Là phần mềm giúp ***quản lý máy ảo***, cho phép máy host có thể có nhiều guest VM bằng cách phân bổ (abstract/isolate/distribute) tài nguyên của host
 
-## *Tại sao lại cần đến Hypervisor?*
+<!-- ## *Tại sao lại cần đến Hypervisor?* -->
 <!-- - Hypervisor giúp tối ưu hóa tài nguyên của host, tạo sự linh hoạt giữa các guest vì nó có thể được di chuyển -->
 
 ## *Phân loại:*
