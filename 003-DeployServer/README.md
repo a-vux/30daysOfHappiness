@@ -23,6 +23,8 @@
 ### ***3. Phân bổ tài nguyên phần cứng cho các ứng dụng đó:***
 - Hệ điều hành cần nhận dạng phần cứng, nó sẽ tải driver của thiết bị tương ứng đó về, cho phép sử dụng thiết bị đó mà không cần biết cách thức hoạt động của phần cứng/thiết bị đó như nào
 
+    ❗***Driver*** : môi trường giúp hệ điều hành tương tác với phần cứng. VD: driver bàn phím giúp các trình nhập văn bản biết mình nhấn phím nào, hoặc driver card màn hình giúp hiện chữ/ảnh, driver máy in giúp dùng máy in, driver card WiFi giúp kết nối tới Internet...
+
 ## *Phân loại hệ điều hành:*
 - Thực tế có rất nhiều hệ điều hành khác nhau để phục vụ nhu cầu người dùng. Dưới đây chỉ là một số hệ điều hành phổ biến:
 ### ***1. General-purpose OS (GPOS):***
@@ -203,6 +205,9 @@
 - Muốn logout thì: `docker logout`
 - Để đổi tên tag của image: `docker tag <tên image cũ> <tên image mới>`
 - Để up lên repo: `docker push <tên account>/<tên repo>:tagname`
+
+### ***Làm việc với Volume:***
+- Tạo volume: `docker volume create <tên volume>`
 
 ## *Vậy thì khi nào thì dùng Docker?*
 ### ***Khi dev team thay đổi thành viên liên tục***
@@ -517,9 +522,11 @@
 * Webserver:
     * [Topdev](https://topdev.vn/blog/web-server/)
     * [Mozilla](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server)
+    * [Hubspot](https://blog.hubspot.com/website/static-vs-dynamic-website) (static và dynamic) (checked)
     * Các dịch vụ Hosting:
         * Shared:
             * [Youtube](https://www.youtube.com/results?search_query=shared+hosting) (checked)
+            * [Namecheap](https://www.namecheap.com/hosting/what-is-shared-hosting-definition/?gclid=CjwKCAiA5Y6eBhAbEiwA_2ZWIVQGgFAckgwZQmlvkTL1dhqkLtAahDzxej8GjDzSeuIEYieOAr4i3RoCy1kQAvD_BwE) (checked)
         * VPS: https://www.hostinger.com/tutorials/what-is-vps-hosting#What_Is_VPS
         * Dedicated: https://hostingviet.vn/dedicated-server-la-gi
 * Proxy:
