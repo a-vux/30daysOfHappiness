@@ -15,8 +15,8 @@
     * Mở CMD tại thư mục mà mình muốn chạy PHP
     * Nhập lệnh php -S localhost:&lt;port muốn chạy>
 - Hướng dẫn cấu hình Xdebug:
-    * Copy output của phpinfo.php rồi paste vào ***xdebug.org/wizard***
-    * Bên dưới có hướng dẫn lun
+    * Copy ***output*** của phpinfo.php rồi paste vào ***xdebug.org/wizard***
+    * Bên dưới trang web có hướng dẫn lun
     * Ngoài ra bổ sung vào file php.ini đoạn sau (Đây là đối với XDebug 3):
 <p align="center">
     <img style="width: 50%" src="./src/xdebug_config.png">
