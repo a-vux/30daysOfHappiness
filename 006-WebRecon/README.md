@@ -84,13 +84,15 @@
 * Tìm được 60 subdomain của ptit.edu.vn, mỗi tội cần trả phí để sử dụng thêm dịch vụ
 
 ## *Câu 3: Tìm hiểu công cụ Acunetix. Chọn một website trong danh sách tìm được (nghi ngờ có lỗi) và thực hiện scan bằng Acunetix*
+- Acunetix là một tool mạnh giúp test các lỗ hổng bảo mật trên các website
+
 <p align="center">
     <img src="./src/acunetix.png" style="width: 700px">
 </p>
 
 
-## *Câu 4: Tìm hiểu các công cụ scan file ẩn và thư mục ẩn (burpsuite, dirb, fileburster, ...), đề xuất công cụ scan tốt nhất. Chọn 3 website trong danh sách tìm được, thực hiện scan file ẩn và thư mục ẩn*
-1. Dirb:
+## *Câu 4: Tìm hiểu các công cụ scan file ẩn và thư mục ẩn (burpsuite, dirb, fileburster, ...), đề xuất công cụ scan tốt nhất. Thực hiện scan file ẩn và thư mục ẩn*
+### **1. Dirb:**
 - Là một công cụ scan nội dung website trên terminal, bao gồm file và thư mục (có thể đã bị ẩn)
 - Scan theo kiểu brute force, tức dựa trên một danh sách có sẵn, phân tích phản hồi trả về của website
 - Vì nó chỉ scan file và thư mục ẩn nên không được tính là scan lỗ hổng
@@ -104,7 +106,7 @@
     <img src="./src/dirb.png" style="width: 400px">
 </p>
 
-2. Burp Suite:
+### **2. Burp Suite:**
 - Burp Suite cũng có thể sử dụng để scan file/thư mục bằng cách bắt request ném vào Intruder, đặt payload vào path và cho chạy trên list của mình
 ## *Câu 5: Kiểm tra công nghệ, framework được sử dụng trong các website: kiểm tra lần lượt mỗi website hoặc dịch vụ đang chạy, lấy thông tin framework, phiên bản (gợi ý: phân tích http header, url đặc biệt hoặc sử dụng tool wappalyzer,...)*
 - Để (gần như ngay lập tức) biết được một website đang sử dụng framework, CMS (Content Management System - Hệ quản trị nội dung) nào, sử dụng extension Wappalyzer là nhanh nhất
