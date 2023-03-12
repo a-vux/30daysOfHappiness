@@ -29,7 +29,7 @@
 * Lab đã mã hóa HTML dấu ngoặc nhọn trong thuộc tính của thẻ
 * Khai thác giữa các attributes của tag
 
-### ****Solution:****
+### **Solution:**
 * Thử search một chuỗi bất kỳ, thấy giá trị của nó được lưu vào trong thuộc tính value của thẻ input
 <p align="center">
     <img src="./src/07_2.png" style="width: 500px;">
@@ -393,10 +393,12 @@
     <img src="./src/04_2.png" style="width: 500px;">
 </p>
 
-    ❗Đoạn script có những nội dung sau:
+```
+❗Đoạn script có những nội dung sau:
     1. document.getElementById(id) dùng để trả về đối tượng có id được truyền vào
     2. Đối tượng đó có phương thức là innerHTML, dùng để trả về nội dung của thẻ đó, tức text và các tag con trong nó
     3. Ở đây, đối tượng nào trong document có id là "searchMessage" sẽ được thay thế nội dung thành query. Và bên trên có một thẻ span với id như vậy
+```
 
 * Do đó, ta chèn được đoạn payload như sau:
 <p align="center">
@@ -407,8 +409,6 @@
 <p align="center">
     <img src="./src/03_4.png" style="width: 500px;">
 </p>
-
-
 
 ## *Lab 5: DOM XSS in jQuery anchor href attribute sink using location.search source*
 ### **Lab Description:**
@@ -431,8 +431,6 @@
 <p align="center">
     <img src="./src/05_4.png" style="width: 500px;">
 </p>
-
-
 
 ## *Lab 10: DOM XSS in document.write sink using source location.search inside a select element*
 ### **Lab Description:**
