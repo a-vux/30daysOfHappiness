@@ -198,7 +198,7 @@ VD: Để hiển thị dấu nhỏ hơn (<), ta phải sử dụng `&lt;` hoặc
 |DOM-based|Reflected|
 |-|-|
 |DOM-based xảy ra khi trình duyệt xử lý data từ nguồn không tin cậy bằng cách chèn nó vào sink trong DOM|Reflected xảy ra khi web lấy data từ request và cho nó vào trong response một cách không an toàn|
-
+|Phản hồi server của DOM không gửi kèm script|Phản hồi của server của Reflected gửi kèm script|
 
 <br>
 
