@@ -4,7 +4,7 @@
 - Một cách khác là ***truy cập vào tất cả URL*** trong trang web được crawl trước đó
 ## *Minh họa:*
 <p align="center">
-    <img src="../src/crawler1.png" style="width: 600px">
+    <img src="./src/crawler1.png" style="width: 600px">
 </p>
 
 - Khi crawler vào URL trang web `mywebsite.com`, nó sẽ ***index*** nội dung của toàn bộ trang web, tìm ra các ***keywords*** và nội dung của trang. Trong ví dụ trên, `mywebsite.com` có những từ khóa như là `Apple, Banana, Pear`
@@ -12,13 +12,13 @@
 - Bởi vì chỉ có duy nhất một website được crawled, nên nếu có một người dùng nào đó tìm kiếm từ khóa `Apple`, `mywebsite.com` sẽ hiện ra, tương tự với các từ khóa `Banana` và `Pear`. Như vậy nếu search engine chỉ có duy nhất nội dung của website được crawl với các từ khóa đó, website đó sẽ là website ***duy nhất*** mà người dùng được trả về
 - Tuy nhiên, crawler sẽ tiếp tục ***crawl tất cả URL và file*** mà nó tìm được. Giả sử `mywebsite.com` có thêm đường dẫn tới `anotherwebsite.com`, crawler cũng sẽ vào URL của trang web đó và tiếp tục tìm kiếm thông tin trong đó. Như vậy cái từ điển của crawler nó sẽ chứa cả keyword của website `mywebsite.com` là `Apple, Banana, Pear` và `anotherwebsite.com` là `Tomatoes, Strawberries, Pineapples`. Những từ khóa này sau đó tiếp tục được lưu trữ trong search engine
 <p align="center">
-    <img src="../src/crawler2.png" style="width: 600px">
+    <img src="./src/crawler2.png" style="width: 600px">
 </p>
 
 - Nghe thì có vẻ cũng ổn đấy, nhưng mà một trang web có rất nhiều URL dẫn đến các trang khác nhau, như vậy crawler sẽ crawl rất nhiều đúng không? Chưa kể khả năng các trang web khác nhau sẽ có nội dung giống nhau nữa. ***Vậy làm như nào để search engine có thể cho ra được website nào được hiển thị trước cái nào?***
 - Đáp án:
 <p align="center">
-    <img src="../src/ans1.png" style="width: 400px">
+    <img src="./src/ans1.png" style="width: 400px">
 </p>
 
 # **Tối ưu hóa Search Engine**
@@ -41,7 +41,7 @@
     * *Sitemap*: cung cấp ***đường dẫn tới sitemap*** (phần sau nói rõ hơn)
     #### VD1:
 <p align="center">
-    <img src="../src/robots1.png" style="width: 600px">
+    <img src="./src/robots1.png" style="width: 600px">
 </p>
 
 - Tất cả các crawler đều có thể index website
@@ -50,7 +50,7 @@
 
     #### VD2:
 <p align="center">
-    <img src="../src/robots2.png" style="width: 600px">
+    <img src="./src/robots2.png" style="width: 600px">
 </p>
 
 - Tất cả các crawler đều có thể index website
@@ -59,33 +59,33 @@
 
     #### VD3:
 <p align="center">
-    <img src="../src/robots3.png" style="width: 600px">
+    <img src="./src/robots3.png" style="width: 600px">
 </p>
 
 - Crawler `Googlebot` được phép index toàn bộ site
 - Crawler `msnbot` không được index site
 - Đối với các files mà mình không muốn crawler index tới, cách "thẳng" nhất là liệt kê các file đó ra. Nhưng nó sẽ không thiết thực nếu chúng ta có rất nhiều file. Thế nên chúng ta có thể tận dụng regex ở đây
 <p align="center">
-    <img src="../src/robots4.png" style="width: 600px">
+    <img src="./src/robots4.png" style="width: 600px">
 </p>
 
 - Tất cả các crawler đều có thể index website
 - Crawler không thể index các file mà có ext là `.ini` (nhờ dấu __*__) nằm trong bất kỳ thư mục nào (nhờ dấu __$__)
 - Đáp án:
 <p align="center">
-    <img src="../src/ans2.png" style="width: 400px">
+    <img src="./src/ans2.png" style="width: 400px">
 </p>
 
 # **Sitemaps**
 - Giống như bản đồ địa lý trong đời sống hàng ngày, sitemap cũng giống vậy nhưng dành cho website thui
 - Sitemaps đóng vai trò như sự chỉ dẫn giúp cho crawler, bởi chúng chỉ ra những con đường để thu thập thông tin trong website. Cái biểu đồ bên dưới là ví dụ minh họa cho sitemap của một website:
 <p align="center">
-    <img src="../src/sitemap.png" style="width: 600px">
+    <img src="./src/sitemap.png" style="width: 600px">
 </p>
 
 - Màu sau xanh dương thì là thư mục, màu xanh là thì là file, tức trang web cụ thể trên web. Tuy nhiên nó chỉ mang tính chất ***MINH HỌA***, còn thực tế nó có thể nhìn giống như này:
 <p align="center">
-    <img src="../src/sitemap2.png" style="width: 600px">
+    <img src="./src/sitemap2.png" style="width: 600px">
 </p>
 
 - Sitemap thường được viết dưới dạng XML. Sitemap cũng có ảnh hưởng đến SEO, bởi nó làm cho việc crawl thông tin của website trở nên dễ dàng hơn
@@ -100,12 +100,12 @@
 - Kết hợp từ khóa `site: + <tên website>` để tìm các từ khóa nằm trong website được đề cập
 - Ví dụ nếu ta chỉ tìm kiếm thông thường từ khóa sau, ta nhận được hơn 1 triệu kết quả
 <p align="center">
-    <img src="../src/dork1.png" style="width: 600px">
+    <img src="./src/dork1.png" style="width: 600px">
 </p>
 
 - Khi thêm `site:` vào, kết quả chỉ còn hơn 300 nghìn, và chỉ chứa chính xác website mình muốn
 <p align="center">
-    <img src="../src/dork2.png" style="width: 600px">
+    <img src="./src/dork2.png" style="width: 600px">
 </p>
 
 - Ngoài ra còn rất nhiều từ khóa khác:
@@ -114,9 +114,9 @@
     * `intitle:` chuỗi truy vấn sau nó phải nằm trong tiêu đề của web
 - Song, sự tiện ích của nó cũng có thể đem lại nhiều sự nguy hiểm tiềm tàng. Nếu `filetype:` kết hợp với một định dạng file nhạy cảm nào đó, và nếu một trang web nào đó không được giữ cẩn thận, file đó sẽ hiện lên kết quả tìm kiếm. Ngoài ra Google Dorking cũng có thể sử dụng để thực hiện tấn công ***Path Traversal***:
 <p align="center">
-    <img src="../src/path_traversal.png" style="width: 600px">
+    <img src="./src/path_traversal.png" style="width: 600px">
 </p>
 - Đáp án:
 <p align="center">
-    <img src="../src/ans3.png" style="width: 400px">
+    <img src="./src/ans3.png" style="width: 400px">
 </p>
