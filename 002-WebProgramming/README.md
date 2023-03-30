@@ -5,7 +5,7 @@
     <div style="font-style: italic; text-align: center;">Địa chỉ của một web web page chínhpage</div>
 </p>
 
-2. *Website* : là ***tập hợp các web page*** có ***cùng domain name***, và mỗi web page có thể link tới các web page khác. Để truy cập vào một website, đánh domain name vào thanh tìm kiếm, và ta được trả về ****** của website được gọi là ***homepage***
+2. *Website* : là ***tập hợp các web page*** có ***cùng domain name***, và mỗi web page có thể link tới các web page khác. Để truy cập vào một website, đánh domain name vào thanh tìm kiếm, và ta được trả về ***trang web chính*** của website được gọi là ***homepage***
 <p align="center">
     <img src="./src/website-address.png">
     <div style="font-style: italic; text-align: center;">Địa chỉ của một website</div>
