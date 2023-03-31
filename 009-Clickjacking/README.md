@@ -1,6 +1,7 @@
 # **Clickjacking**
 - Clickjacking là một kỹ thuật tấn công lừa người dùng ***click*** vào một ***đường link độc hại*** nào đó, thông thường là ***đã được che giấu*** bằng một cái gì đó khác khác mà người dùng không nhận ra được
 - Thông thường clickjacking có thể được thực hiện bằng việc ***chèn phần tử web vô hình*** (thẻ `<div>`) lên những chỗ mà người dùng nghĩ rằng nó vô hại
+- Trong khi trong CSRF, sau khi truy cập vào site độc hại, người dùng ***không cần thao tác gì thêm*** mà đã bị thực hiện các tác vụ không mong muốn, ở đây trong Clickjacking người dùng cần phải ***thực hiện một hành động*** (click chuột) khi truy cập site độc hại
 - Thuộc kiểu tấn công ***Client Side***
 
 ## *Hậu quả:*
@@ -29,7 +30,7 @@
 - Như vậy người dùng nào muốn xem cái video kia đều có thể bị lừa thực hiện các tác vụ mà kẻ tấn công muốn
 - Về phía trình duyệt, người dùng đã chọn click vào link của kẻ tấn công, nên nó sẽ thực hiện bất kể điều gì nằm đằng trong cái link đó
 
-# **Cách phòng thủ**
+# **Cách phòng chống**
 ## *Sử dụng CSP - Content Security Policy Header:*
 - `Content-Security-Policy` là một HTTP Header, được dùng để cho phép tải tài nguyên nào từ domain nào, hoặc cho phép domain nào được embed site mình vào
 - Để quản lý site nào có thể embed site của mình, sử dụng directive `frame-ancestors` với cú pháp như sau:

@@ -337,7 +337,7 @@
 - VD: front-end của ***`https://domain-a.com`*** sử dụng XMLHttpRequest (một đối tượng trong JS dùng để tương tác với server) để gửi request tới ***`https://domain-b.com/data.json`***
     * Về vấn đề bảo mật, trình duyệt sẽ chặn cái request đến server khác gốc này, giả sử khi XMLHttpRequest và Fetch API cùng tuân theo SOP
     * Những web app sử dụng API như vậy sẽ chỉ có thể request tài nguyên từ chính origin của nó, trừ khi trong response của cái origin được request tới chứa CORS header
-- Nếu không được triển khai cẩn thận có thể dẫn tới CSRF - Cross-site Request Forgery
+- Nếu không được triển khai cẩn thận có thể dẫn tới ***CSRF - Cross-site Request Forgery***
 
 ### *Cơ chế hoạt động của CORS:*
 #### ***Trường hợp đơn giản nhất:***
@@ -351,7 +351,7 @@
     <img style="width: 70%" src="./src/cors-simple-case.png">
 </p>
 
-- Đoạn request khi mà trình duyệt chạy đến đoạn code đó có dạng:
+- Đoạn request khi mà trình duyệt chạy đến dòng code đó có dạng:
 <p align="center">
     <img style="width: 70%" src="./src/cors-simple-case2.png">
 </p>
@@ -369,7 +369,7 @@
 
 #### ***Thông qua preflighted request:***
 - Trước hết ta cần biết *preflight request* là gì. Preflight có nghĩa là ***"xảy ra trước giờ máy bay cất cánh"***. Nhưng ở đây có thể hiểu là trước khi request chính được "bay" sang server tài nguyên
-- Preflight request là ***CORS request*** được ***browser tự động gửi*** khi có thêm các ***custom header*** (không phải header do user agent tự tạo). Nó dùng để kiểm tra xem server tài nguyên có ***cho phép request*** chứa ***giao thức đó*** và ***các header được thêm vào*** để truy cập vào tài nguyên hay không
+- Preflight request là ***CORS request*** được ***browser tự động gửi*** khi có thêm các ***custom header*** (không phải header do `user agent` tự tạo). Nó dùng để kiểm tra xem server tài nguyên có ***cho phép request*** chứa ***giao thức đó*** và ***các header được thêm vào*** để truy cập vào tài nguyên hay không
 - Preflight request là một request với giao thức ***OPTIONS***, và có các header như:
     * Access-Control-Request-Method
     * Access-Control-Request-Headers

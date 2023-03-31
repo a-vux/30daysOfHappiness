@@ -71,7 +71,7 @@
     * Routing: chọn ra đường phù hợp giữa hai thiết bị
     * Logical addressing: thêm địa chỉ IP của bên gửi và bên nhận vào header của packet để phân biệt các thiết bị trong mạng lưới
 <!-- - Có 2 nhiệm vụ chính: phân nhỏ các phân mảnh thành các gói tin mạng (network packets), sau đó đóng gói lại; routing các gói để tìm đường thuận tiện nhất trên mạng vật lý? -->
-## *4. Transport layer - tầng giao vận*
+### *4. Transport layer - tầng giao vận*
 <!-- - Vai trò: có các giao thức vận chuyển như TCP, UDP... dùng để phân dữ liệu thành các phân mảnh (segments) và phục hồi các phân mảnh đó lại để trở thành dữ liệu phục vụ cho tầng phiên -->
 - Cung cấp dịch vụ cho tầng ứng dụng và nhận dịch vụ từ tầng mạng, như sử dụng giao thức TCP hoặc UDP
 - Các dịch vụ cung cấp:
