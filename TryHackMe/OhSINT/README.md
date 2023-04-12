@@ -5,9 +5,9 @@
 - Việc thu thập thông tin này không chỉ là việc thu thập thông qua các phần mềm, công cụ trên máy tính mà là ***mọi cách thu thập từ các nguồn công khai***, ví dụ như đọc sách báo cũng có thể tính là OSINT
 - Trên Internet, các thông tin có thể thu thập được từ ***văn bản, hình ảnh, videos, webinars, các trang mạng xã hội...***
 
-## *EXIF là gì?*
+<!-- ## *EXIF là gì?*
 - Là cụm từ viết tắt của ***Exchangeable image file format***
-- Là một tiêu chuẩn xác định các thông tin liên quan của một bức ảnh số
+- Là một tiêu chuẩn xác định các thông tin liên quan của một bức ảnh số -->
 
 # **Vào bài thôi**
 - Đề có đúng duy nhất 1 task, với nội dung task *"Bạn có thể lấy được những thông tin gì từ trong bức ảnh này?"*
