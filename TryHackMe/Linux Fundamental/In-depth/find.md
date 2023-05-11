@@ -18,5 +18,5 @@ find <directory> -name <file_name>
 find <directory> -perm <quyền>
 ```
 - Tìm file/folder có permiss<p align="center">
-    <img src="../src/find3 mn.png" style="width: 500px">
+    <img src="../src/find3.png" style="width: 500px">
 </p>
